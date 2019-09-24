@@ -23,6 +23,10 @@ public:
 	PhanSo operator-(PhanSo);
 	PhanSo operator*(PhanSo);
 	PhanSo operator/(PhanSo);
+	operator float() const
+	{
+		return float(tu)/float(mau);
+	}
 	void RutGonPhanSo();
 	int getTuSo();
 	int getMauSo();

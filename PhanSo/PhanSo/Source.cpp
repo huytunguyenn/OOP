@@ -12,11 +12,11 @@ istream &operator >> (istream &is, PhanSo &p)
 } 
 int PhanSo::getTuSo()
 {
-	return tu;
+	return this->tu;
 }
 int PhanSo::getMauSo()
 {
-	return mau;
+	return this->mau;
 }
 void PhanSo::setTuSo(int x)
 {
@@ -37,7 +37,7 @@ int PhanSo::UCLN(int a, int b)
 	else 
 		return UCLN(a, b - a);
 }
-void PhanSo:: RutGonPhanSo()
+void PhanSo::RutGonPhanSo()
 {
 	int x = UCLN(tu, mau);
 	if ((tu > 0 && mau < 0)||( tu < 0 && mau < 0))
@@ -48,7 +48,7 @@ void PhanSo:: RutGonPhanSo()
 	tu /= x;
 	mau /= x;
 }
-PhanSo PhanSo:: operator+(PhanSo q)
+PhanSo PhanSo::operator+(PhanSo q)
 {
 	PhanSo kq;
 	kq.tu = this->tu*q.mau + q.tu*this->mau;
@@ -56,7 +56,7 @@ PhanSo PhanSo:: operator+(PhanSo q)
 	kq.RutGonPhanSo();
 	return kq;
 }
-PhanSo PhanSo:: operator-(PhanSo q)
+PhanSo PhanSo::operator-(PhanSo q)
 {
 	PhanSo kq;
 	kq.tu = this->tu*q.mau - q.tu*this->mau;
@@ -64,7 +64,7 @@ PhanSo PhanSo:: operator-(PhanSo q)
 	kq.RutGonPhanSo();
 	return kq;
 }
-PhanSo PhanSo:: operator*(PhanSo q)
+PhanSo PhanSo::operator*(PhanSo q)
 {
 	PhanSo kq;
 	kq.tu = this->tu*q.tu;
@@ -72,7 +72,7 @@ PhanSo PhanSo:: operator*(PhanSo q)
 	kq.RutGonPhanSo();
 	return kq;
 }
-PhanSo PhanSo:: operator/(PhanSo q)
+PhanSo PhanSo::operator/(PhanSo q)
 {
 	PhanSo kq;
 	kq.tu = this->tu*q.mau;

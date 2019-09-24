@@ -9,6 +9,8 @@ int main()
 	cout << p << "x" << q << "=" <<p*q << endl;
 	cout << p << "-" << q << "=" << p - q << endl;
 	cout << p << ":" << q << "=" << p/q << endl;
+	cout << p << "= " << float(p)<<endl;
+	cout << q << "= " << float(q)<<endl;
 	system("pause");
 	return 0;
 }
