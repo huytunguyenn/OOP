@@ -40,6 +40,11 @@ int PhanSo::UCLN(int a, int b)
 void PhanSo:: RutGonPhanSo()
 {
 	int x = UCLN(tu, mau);
+	if ((tu > 0 && mau < 0)||( tu < 0 && mau < 0))
+	{
+		tu = -tu;
+		mau = -mau;
+	}
 	tu /= x;
 	mau /= x;
 }
