@@ -13,10 +13,6 @@ public:
 		mau = 1;
 		tu = 0;
 	}
-	//~PhanSo()
-	//{
-	//	cout << endl<< "Da xoa phan so"<<endl;
-	//}
 	friend ostream& operator <<(ostream& , PhanSo );
 	friend istream &operator >> (istream &, PhanSo &);
 	PhanSo operator+(PhanSo);
