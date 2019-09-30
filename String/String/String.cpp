@@ -21,9 +21,6 @@ ostream& operator<<(ostream& os, String str)
 }
 istream &operator >> (istream &is, String &str)
 {
-	while (str.s[str.len])
-	{
-		str.len++;
-	}
+	
 	return is;
 }

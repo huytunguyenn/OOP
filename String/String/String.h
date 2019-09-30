@@ -7,7 +7,7 @@ using namespace std;
 class String
 {
 private:
-	char *s;
+	char s[1000];
 	int len;
 public:
 	String();
