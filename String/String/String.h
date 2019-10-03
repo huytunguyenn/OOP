@@ -3,16 +3,25 @@
 #define _STRING_H_
 #include <iostream>
 using namespace std;
-#include <string>
+#include <vector>
+
 class String
 {
 private:
-	char s[1000];
+	char *s;
 	int len;
 public:
 	String();
 	~String();
-	friend ostream& operator<<(ostream& , String);
-	friend istream &operator >> (istream &, String &);
+	String(String&);
+	String(char*);
+	String& operator=(const String&);
+	char& operator[](int);
+	friend istream& operator >> (istream&, String&);
+	friend ostream& operator << (ostream&, String&);
+	const char* c_str() const
+	{
+		return s;
+	}
 };
 #endif

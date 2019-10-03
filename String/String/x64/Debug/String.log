@@ -1,0 +1,9 @@
+﻿  String.cpp
+d:\github\oop\string\string\string.cpp(21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+d:\github\oop\string\string\string.cpp(61): warning C4805: '!=': unsafe mix of type 'int' and type 'bool' in operation
+  Generating Code...
+  Compiling...
+  main.cpp
+  Generating Code...
+  String.vcxproj -> D:\GITHUB\OOP\String\x64\Debug\String.exe
+  String.vcxproj -> D:\GITHUB\OOP\String\x64\Debug\String.pdb (Partial PDB)
