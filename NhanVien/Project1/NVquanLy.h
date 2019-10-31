@@ -3,7 +3,6 @@
 #include "NhanVien.h"
 #include "NVcongNhan.h"
 #include "NVsanXuat.h"
-
 #include <list>
 class NVquanLy: public NhanVien
 {

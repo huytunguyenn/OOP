@@ -13,9 +13,9 @@ protected:
 public:
 	NhanVien();
 	virtual ~NhanVien();
-	//friend ostream& operator<<(ostream& os, NhanVien a);
-	//friend istream& operator>>(istream& is, NhanVien& a);
-	virtual float tinhLuong();
+	virtual void Nhap();
+	virtual void Xuat();
+	virtual float tinhLuong()=0;
 };
 #endif
 

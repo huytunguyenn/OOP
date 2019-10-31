@@ -12,21 +12,19 @@ NhanVien::NhanVien()
 NhanVien::~NhanVien()
 {
 }	
-ostream& operator<<(ostream& os, NhanVien a) {
-	cout << "Ho va ten: " << a.HOten << endl;
-	cout << "Ma: " << a.MA << endl;
-	cout << "Dia chi: " << a.DIAchi << endl;
-	cout << "Ngay sinh: " << a.NGAYsinh;
-	return os;
+void NhanVien::Xuat() {
+	cout << "Ho va ten: " << HOten << endl;
+	cout << "Ma: " << MA << endl;
+	cout << "Dia chi: " << DIAchi << endl;
+	cout << "Ngay sinh: " << NGAYsinh;
 }
-istream& operator>>(istream& is, NhanVien& a) {
+void NhanVien::Nhap() {
 	cout << "Nhap ho va ten: ";
-	cin >> a.HOten;
+	cin >> HOten;
 	cout << "Nhap ma: ";
-	cin >> a.MA;
+	cin >> MA;
 	cout << "Dia chi: ";
-	cin >> a.DIAchi;
+	cin >> DIAchi;
 	cout << "Ngay sinh: ";
-	cin >> a.NGAYsinh;
-	return is;
+	cin >> NGAYsinh;
 }

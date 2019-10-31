@@ -7,26 +7,25 @@ NVcongNhan::NVcongNhan()
 NVcongNhan::~NVcongNhan()
 {
 }
-ostream& operator<<(ostream& os, NVcongNhan a) {
-	cout << "Ho va ten: " << a.HOten << endl;
-	cout << "Ma: " << a.MA << endl;
-	cout << "Dia chi: " << a.DIAchi << endl;
-	cout << "Ngay sinh: " << a.NGAYsinh;
-	cout << endl << "So ngay lam: " << a.SOngay;
-	return os;
+
+void NVcongNhan::Xuat(){
+	cout << "Ho va ten: " << HOten << endl;
+	cout << "Ma: " << MA << endl;
+	cout << "Dia chi: " << DIAchi << endl;
+	cout << "Ngay sinh: " << NGAYsinh;
+	cout << endl << "So ngay lam: " << SOngay;
 }
-istream& operator>>(istream& is, NVcongNhan& a) {
+void NVcongNhan::Nhap(){
 	cout << "Nhap ho va ten: ";
-	cin >> a.HOten;
+	cin >> HOten;
 	cout << "Nhap ma: ";
-	cin >> a.MA;
+	cin >> MA;
 	cout << "Dia chi: ";
-	cin >> a.DIAchi;
+	cin >> DIAchi;
 	cout << "Ngay sinh: ";
-	cin >> a.NGAYsinh;
+	cin >> NGAYsinh;
 	cout << "Nhap so ngay lam: ";
-	cin >> a.SOngay;
-	return is;
+	cin >> SOngay;
 }
 float NVcongNhan::tinhLuong() {
 	return SOngay * 300000;

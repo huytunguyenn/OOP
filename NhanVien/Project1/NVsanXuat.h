@@ -8,8 +8,8 @@ protected:
 public:
 	NVsanXuat();
 	virtual ~NVsanXuat();
-	friend ostream& operator<<(ostream&, NVsanXuat);
-	friend istream& operator>>(istream&, NVsanXuat&);
+	virtual void Nhap();
+	virtual void Xuat();
 	virtual float tinhLuong();
 };
 #endif

@@ -9,26 +9,24 @@ NVsanXuat::NVsanXuat()
 NVsanXuat::~NVsanXuat()
 {
 }
-ostream& operator<<(ostream& os, NVsanXuat a) {
-	cout << "Ho va ten: " << a.HOten << endl;
-	cout << "Ma: " << a.MA << endl;
-	cout << "Dia chi: " << a.DIAchi << endl;
-	cout << "Ngay sinh: " << a.NGAYsinh;
-	cout << endl << "So san pham: " << a.SOsp;
-	return os;
+void NVsanXuat::Xuat() {
+	cout << "Ho va ten: " << HOten << endl;
+	cout << "Ma: " << MA << endl;
+	cout << "Dia chi: " << DIAchi << endl;
+	cout << "Ngay sinh: " << NGAYsinh;
+	cout << endl << "So san pham: " << SOsp;
 }
-istream& operator>>(istream& is, NVsanXuat& a) {
+void NVsanXuat::Nhap() {
 	cout << "Nhap ho va ten: ";
-	cin >> a.HOten;
+	cin >> HOten;
 	cout << "Nhap ma: ";
-	cin >> a.MA;
+	cin >> MA;
 	cout << "Dia chi: ";
-	cin >> a.DIAchi;
+	cin >> DIAchi;
 	cout << "Ngay sinh: ";
-	cin >> a.NGAYsinh;
+	cin >> NGAYsinh;
 	cout << "Nhap so san pham: ";
-	cin>> a.SOsp;
-	return is;
+	cin >> SOsp;
 }
 float NVsanXuat::tinhLuong() {
 	return SOsp * 20000;

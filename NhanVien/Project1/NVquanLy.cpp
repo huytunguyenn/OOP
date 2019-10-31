@@ -23,13 +23,13 @@ void NVquanLy::themNhanVien() {
 		} while (!(loai == 1 || loai == 2));
 		if (loai ==1) {
 			temp = new NVcongNhan;
-			cin >> temp;
+			temp->Nhap();
 			dsnv.push_back(temp);
 		}
 		else
 		{
-			temp = new NVcongNhan;
-			cin >> temp;
+			temp = new NVsanXuat;
+			temp->Nhap();
 			dsnv.push_back(temp);
 		}
 	}
